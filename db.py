@@ -10,6 +10,6 @@ SessionLocal = sessionmaker(bind=engine)
 class Base(DeclarativeBase):
     pass
 
-from app.models import user, task
+from app.routers import user, task
 
 Base.metadata.create_all(bind=engine)
